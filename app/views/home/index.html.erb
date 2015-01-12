@@ -1,0 +1,12 @@
+
+<h1>Welcome to job Portol</h1>
+ <% if !(signed_in?) %>
+
+<div>
+
+    <center><%= link_to "User", new_user_registration_path , class: "btn-group-lg btn btn-lg btn-primary" %></center>
+    <center><%= link_to "Employee", new_emp_registration_path , class: "btn-group-lg btn btn-lg btn-primary" %></center>
+</div>
+<% else %>
+	User/Emp Name
+<% end %>
