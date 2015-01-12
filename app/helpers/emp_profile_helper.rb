@@ -1,0 +1,2 @@
+module EmpProfileHelper
+end

@@ -1,0 +1,18 @@
+<h1>All Employees</h1>
+<div>Employee Id</div>
+
+
+<ul class="users">
+
+  <% @emps.each do |emp| %>
+    <li>
+     
+      <%= link_to emp.email, emp_profile_path(emp) %>
+      <% if  @current_emp.admin? %>
+    | <%= link_to "delete", emp_profile_path(emp.email) , method: :delete,
+                                  data: { confirm: "Employee delete?" } %>
+  		<% end 	%>
+    </li>
+  <% end %>
+
+

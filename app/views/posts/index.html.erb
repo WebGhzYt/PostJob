@@ -1,0 +1,19 @@
+<h1>All List Of Post</h1>
+
+
+
+<ul class="users">
+
+  <% @posts.each do |post| %>
+    <li>
+     
+      <%= link_to post.id, '#' %>
+     <%= link_to post.title, '#' %>
+     
+     <% link_to post.emp_id, '#' %>
+     <%= link_to "Apply", '#' %>
+
+    </li>
+  <% end %>
+
+
